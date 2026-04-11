@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- This is an automatically generated file.
+     It will be read and overwritten.
+     DO NOT EDIT! 
+Rama Comments End Here -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<html>
+<style>
+  table,
+  th,
+  td {
+    border: 2px solid black;
+  }
+</style>
+
+<head>
+    <TITLE>HTML pCloud Drive Bookmarks</TITLE>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <!-- <p>Expanded Detailed Current Date and Time</p> -->
+  
+  <p id="datetime"></p>
+
+  <script>
+
+    function displayDateTime() {
+      // Get the current date and time
+      const now = new Date();
+
+      // Format options for day, date, and time
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      };
+
+      // Convert to local string format
+      document.getElementById('datetime').innerHTML = "Current Date and Time is " + now.toLocaleString('en-US', options);
+    }
+
+    // Update every second
+    setInterval(displayDateTime, 1000);
+
+    // Call immediately to avoid 1-second delay
+    displayDateTime();
+
+  </script>
+
+  <!-- BEGIN TRYing.......Display Current Date in CCYY-MM-DD and MM/DD/CCYY Format-->
+
+<p>Today's date probably in EST : <span id="currentDateCCYY-MM-DD"></span></p>
+
+<script>
+  // Get the current date
+  const today = new Date();
+  
+  // Format as CCYY-MM-DD
+  const yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1; // Months start at 0
+  let dd = today.getDate();
+
+  // Add leading zeros if needed
+  if (dd < 10) dd = '0' + dd;
+  if (mm < 10) mm = '0' + mm;
+
+//  const formattedDate = yyyy + '-' + mm + '-' + dd;
+  const formattedDate = ' MM/DD/CCYY-->  ' + mm + '/' + dd + '/' + yyyy + ' CCYY-MM-DD-->' + yyyy + '-' + mm + '-' + dd;
+  
+  // Insert into the HTML
+  document.getElementById('currentDateCCYY-MM-DD').textContent = formattedDate;
+</script>
+
+
+  <!-- END TRYing.......Display Current Date in CCYY-MM-DD Format-->
+
+  <!-- <p> This document was last modified:</p> -->
+
+  <p id="demo"></p>
+
+  <script>
+
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+
+    const date = new Date(document.lastModified);
+    document.getElementById("demo").innerHTML = "This HTML was last modified: " + date;
+    
+  </script>
+
+  <table>
+    <tr>
+      <th><A HREF="https://www.youtube.com/playlist?list=PLh9DBkawWDtSRkjRHntQgc3Xbi1c1jUGf" target="_blank">MyOwn</A>
+<!--
+MyOwn Playlist >>> https://www.youtube.com/playlist?list=PLh9DBkawWDtSC64ZMC_j4bn_xYHS3pyQj  
+      <th><A HREF="https://youtu.be/L5qHwfWmIJo?list=PLh9DBkawWDtSC64ZMC_j4bn_xYHS3pyQj&t=31" target="_blank">MyOwn</A>
+-->        
+
+      <th><A HREF="https://www.youtube.com/c/VoiceOfRishis/videos" target="_blank">Nochur</A></th>
+      <th>
+       <select name="myoptions" id="myoptions" onChange="window.open(this.value, '_blank')">
+        <option value="" disabled selected hidden>Tadatmananda NJ</option>
+        <option value="https://www.youtube.com/watch?v=yM8bg0NP2YE">Sriram Jayaram Jaya Jaya Ram</option>
+        <option value="https://arshabodha.org/teachings/">Tadatmananda NJ Teachings</option>
+        <option value="
+https://youtu.be/QlKPA35xGJ8?list=PLeP4eulMEXiPLKgWBhboZ5YwD6TiTJlMR&t=767
+">Tadatmananda NJ Atma Bodha 02/24</option>
+        <option value="https://www.youtube.com/@SwamiT/videos">Tadatmananda NJ YouTube</option>
+        <option value="https://arshavidya.org/">ArshaVidyaPAsite</option>
+        <option value="https://www.youtube.com/@ArshaVidyaGurukulam/videos">ArshaVidyaGurukulam YT</option>
+        <option value="https://www.youtube.com/@swamitv-eng/podcasts">Tattvavidananda Swami TV</option>
+        <option value="
+https://www.youtube.com/playlist?list=PLYTbMLJyGboClccHqFd6HWou6eexktLuk
+">TattvavidanandaPAtAtmaBodha</option>
+        <option value="https://www.youtube.com/results?search_query=Tattvavidananda+Saraswati">Tattvavidananda Saraswati</option>
+        <option value="
+https://youtu.be/Z8hQuBBA_Ck?list=PLd6RYR-zr5hFheEjd_0ZjTyCLpbLCMScU&t=4
+">TattvavidanandaBhaktaBhakti 6 / 37</option>
+        <option value="
+https://www.youtube.com/playlist?list=PLYTbMLJyGboBhIR0mNTtGSEK7ngwfeqSx
+">TattvaBodhaViditatmanandaPA</option>
+        <option value="
+https://youtu.be/TsQq1Hf9FpA?list=PLw-rStGnMhRh_gL6HSOUq6Ebi5V_Ym0Cu&t=7
+">UK SwaminiAtmaprakashananda 8</option>
+        <option value="
+https://www.youtube.com/@AdvaitaAcademy/playlists
+">Advaita Academy</option>
+
+       </select>
+      </th>
+      <th>
+       <select name="myoptions" id="myoptions" onChange="window.open(this.value, '_blank')">
+        <option value="" disabled selected hidden>Guruparananda</option>
+        <option value="https://www.youtube.com/c/swamiguruparananda/videos">Guruparananda YT</option>
+        <option value="https://www.poornalayam.org/home/">Poornalayam</option>
+        <option value="https://www.youtube.com/@Sastralayam/videos/">Sastralayam YT</option>
+        <option value="https://sastralayam.org/home">Brahmayogananda</option>
+        <option value="https://www.youtube.com/@ArshaBodhini/playlists">Arsha Bodhini Lavanya</option>
+        <option value="
+https://youtu.be/HQ6r4Fd_TYg?list=PLlshzEktXQH1-Obz1s0eT1jKc01B4Sq-G&t=506
+        ">Arsha Bodhini - Atma Bodha 3 of 30</option>
+        <option value="https://www.youtube.com/playlist?list=PLlshzEktXQH0YIoJILZrqDZiF-37Z3jEl">Arsha Bodhini - Tattva Bodha
+ #25</option>
+       </select>
+      </th>
+      <th>
+       <select name="myoptions" id="myoptions" onChange="window.open(this.value, '_blank')">
+        <option value="" disabled selected hidden>Chinmaya NGT Playlist</option>
+        <option value="https://www.youtube.com/@chinmayamissionngt9858/videos">Chinmaya NGT YT</option>
+        <option value="https://www.youtube.com/playlist?list=PLYw3RJAnkvqrl2Ch9ssF0wvTzAzLFOHSo">Bhagavad Gita Playlist</option>
+        <option value="
+https://youtu.be/EhExAAXI9IM?list=PLYw3RJAnkvqrl2Ch9ssF0wvTzAzLFOHSo&t=1
+">Bhagavad Gita - 21 of 86</option>
+        <option value="https://www.youtube.com/playlist?list=PLYw3RJAnkvqoHuxVc-gljWySiHVNeUrfV">KaivalyaNavaneetamPlaylist</option>
+        <option value="
+https://youtu.be/GfV1c-_Puyg?list=PLYw3RJAnkvqoHuxVc-gljWySiHVNeUrfV&t=2
+">KaivalyaNav. - 18 / 32</option>
+        <option value="https://www.youtube.com/playlist?list=PLYw3RJAnkvqoeNzOolupUxCjZDEUkx0nO">Hinduism Playlist</option>
+        <option value="https://www.youtube.com/playlist?list=PLUlHc1Ayc4bPvb-1VpjKvDcx6_U3y2W2-">KaivalyaNav. 25 Chicago</option>
+        <option value="https://www.youtube.com/@ChinfoTamilChannel/playlists">Chinfo Tamil Channel</option>
+        <option value="https://www.youtube.com/@ChinfoChannel/playlists">Chinfo Channel</option>
+        <option value="https://chinfo.org/swami-ramakrishnananda/">Swami Ramakrishnananda</option>
+        <option value="https://chinmayavidyalayangt.org/">School Nagapattinam</option>
+        <option value="https://www.youtube.com/playlist?list=PLD7D-zZlgs1fmlH2W0OA87A6N8HXdEVD6">KaivalyaNav.Paramahamsa</option>
+       </select>
+      </th>
+
+      <th>
+       <select name="myoptions" id="myoptions" onChange="window.open(this.value, '_blank')">
+        <option value="" disabled selected hidden>Nochur Upanishads Etc.,</option>
+        <option value="
+https://www.youtube.com/playlist?list=PL4MKKRS02tn2kgIKfX3x_z8QPEFDpufHF
+">Jnanadhara-Upanishad (M) 1 / 4</option>
+        <option value="
+https://www.youtube.com/watch?v=Gb4m6QzO52E&list=PL4MKKRS02tn1DzLYOQigs9VJVAyAzgaDM
+">Kaṭha Upanishad (T) 1 / 36</option>
+        <option value="
+https://www.youtube.com/watch?v=Fd_qg77yndc&list=PL4MKKRS02tn3N_NAIF0AmaVQt1vtZMoYf
+">Kathopanishad (M) 1 / 6</option>
+        <option value="
+https://www.youtube.com/watch?v=wmaA5bHjQ1Q&list=PL4MKKRS02tn1t8fWScbIBZM8C92njCCvj
+">Kenopanishad (T) 1 / 13</option>
+        <option value="
+https://www.youtube.com/watch?v=4Na_pxqlkeQ&list=PL4MKKRS02tn0RlL5Siul_bmk3lW_bCAyb
+">Taittiriya Upanishad (T) 1 / 7</option>
+        <option value="
+https://www.youtube.com/watch?v=BjhjuJHDvEc&list=PL4MKKRS02tn0RoMieZh8bLUgm-rW5ogkU
+">Isavasya Upanishad (T) 1 / 23</option>
+        <option value="
+https://youtu.be/vJaC1294DEI?list=PL4MKKRS02tn1IhbSkcnDkTyVXqI6GCqxC&t=3665
+">Atmabodham Nochur 3 / 6</option>
+        <option value="
+https://youtu.be/S08nC7cfxbw?list=PLoAWWQG2advZgziaCwytOuJfV78SguUHF&t=113
+">Atmabodham 01/70 Rajagopala Sharma</option>
+
+       </select>
+      </th>
+
+      <th><A HREF="https://www.youtube.com/@SriVittaldasMaharaj/videos" target="_blank">Vittaldas</A></th>
+      <th><A HREF="https://www.youtube.com/@SwamiOmkaranandaTeachings/videos" target="_blank">Omkarananda</A></th>
+      <th><A HREF="https://www.youtube.com/@Dharmadhenu/playlists" target="_blank">Dharmadhenu</A></th>
+      <th><A HREF="https://www.youtube.com/@MadrasSanskritCollege/playlists" target="_blank">SanskritCollege</A></th>
+    </tr>
+  </table>
+
+  <br>
+
+  <table>
+    <tr>
+      <th>
+        <DT>
+          <h2 style="background-color:orange;">0002-Nochur (Tamil)</h2>
+          <h3 style="background-color:Yellow;">Kaṭha Upanishad #36</h3>  
+          <A HREF="
+https://youtu.be/Hv4rMWsQlPo?list=PL4MKKRS02tn1DzLYOQigs9VJVAyAzgaDM&t=2442
+          " 
+          target="_blank"> 
+          <img src="Nochur All Tamil.png" alt="Nochur All Tamil" width="250" height="100">
+          </A>
+      </th>
+
+    <th>
+      <h2 style="background-color:powderblue;">011-Nochur Tamil</h2>
+      <h3 style="background-color:Yellow;">Bhagavata Darsanam-#28</h3> 
+      <A HREF="
+https://youtu.be/6w3wz3nRXRQ?list=PL4MKKRS02tn12WRy_r7qYvPCbtDuZG_WO&t=3780
+" 
+      target="_blank">
+        <img src="Nochur Venkataraman-01.png" alt="Nochur Venkataraman-01" width=250" height="100">
+      </A>
+    </th>
+
+      <th>
+        <h2 style="background-color:DodgerBlue;">11-Nochur Malayalam</h2>
+        <h3 style="background-color:Yellow;">Malayalam Bhagavad Gita #78</h3>  
+        <A HREF="
+https://youtu.be/bg0eNiTcAjk?list=PL4MKKRS02tn2bM9dfD_7tBxNeoBcFwPTU&t=84
+" 
+        target="_blank">
+          <img src="Nochur All Malayalam.png" alt="Nochur All Malayalam" width="250" height="100">
+        </A>
+      </th>
+
+      <th>
+        <h2 style="background-color:MediumSeaGreen;">4 / 58-Guruparananda</h2>
+        <h3 style="background-color:Yellow;">Taittiriya Upanishad # 58</h3> 
+        <A HREF="
+https://youtu.be/Xxc30PIlAcg?list=PLFhE-jwdLAYGsdpuCyxGl6VvRcU1v1Svm&t=3
+" 
+        target="_blank">
+          <img src="Guruparananda.png" alt="Guruparananda" width="250" height="100">
+        </A>
+    </th>
+
+    <th>
+      <h2 style="background-color:rosybrown;">341-Omkarananda</h2>
+      <h3 style="background-color:Yellow;">Bhagavad Gita #626</h3> 
+      <A HREF="
+https://youtu.be/3jdzgObCENA?list=PL3wdgvULoHmd_sIqrK-c0-M-pB4WhQhcV&t=2
+" 
+      target="_blank">
+        <img src="Omkarananda YT.png" alt="Bhagavad Gita Shankara Bhashyam #626" width="200" height="100">
+      </A>
+    </th>
+  </table>
+  <table>
+
+    <th>
+      <h2 style="background-color:powderblue;">029-TadatmanandaNJ</h2>
+      <h3 style="background-color:Yellow;">Q&A with Swami-#30</h3> 
+      <A HREF="https://youtu.be/Sqs4Z2yTmj0?list=PLeP4eulMEXiMeva3RyKP_1ZMoPCWzDFuA&t=5" 
+      target="_blank">
+        <img src="Tadatmananda NJ YT.png" alt="Tadatmananda NJ" width=250" height="100">
+      </A>
+    </th>
+    
+    <th>
+      <h2 style="background-color:rosybrown;">38/102-Omkarananda</h2>
+      <h3 style="background-color:Yellow;">Kaivalya Navaneetham #102</h3> 
+      <A HREF="
+https://youtu.be/JeZa_P1_yMY?list=PL3wdgvULoHmd3SC8D30xDomfnN5bPMAq2&t=1034
+" 
+      target="_blank">
+        <img src="Omkarananda YT.png" alt="Omkarananda" width="250" height="100">
+      </A>
+    </th>
+
+    <th>
+      <h2 style="background-color:powderblue;">020-DrSudhaSeshayyan</h2>
+      <h3 style="background-color:Yellow;">Dr. Sudha Seshayyan #486</h3> 
+      <A HREF="
+https://youtu.be/KVPHKNplZxw?list=PLoAWWQG2advaED8tbn2un2JKW0H1KOXmm&t=358
+" 
+      target="_blank">
+        <img src="DrSudhaSeshayyan.png" alt="DrSudhaSeshayyan" width="250" height="100">
+      </A>
+    </th>
+
+    <th>
+      <h2 style="background-color:powderblue;">015-DrK S Maheswaran</h2>
+      <h3 style="background-color:Yellow;">Dr. K. S. Maheswaran #138</h3> 
+      <A HREF="
+https://youtu.be/5uwGXgDmDfg?list=PLafQ4zu1CKafN9e3e-EcOSv6GtBhnLPMG&t=1065
+" 
+      target="_blank">
+        <img src="DrK S Maheswaran.png" alt="Dr K S Maheswaran" width="250" height="100">
+      </A>
+    </th>
+
+    <th>
+      <h2 style="background-color:powderblue;">004-DrManiDravid</h2>
+      <h3 style="background-color:Yellow;">Dr Mani Dravid Sastrigal #05</h3> 
+      <A HREF="
+https://youtu.be/Zx0Oi-GXQ1I?list=PLnnFGi5KwfGE8aoyHbR1miVfiRAxozMAx&t=2315
+" 
+      target="_blank">
+        <img src="DrManiDravidSastrigal.png" alt="Dr Mani Dravid Sastrigal" width="250" height="100">
+      </A>
+    </th>
+<!-- Dr Mani Dravid Sastrigal 13 videos https://youtu.be/yWh3JeT_duA?list=PL1NtlG9_mds6gV80fZ-5WcjQrvM0TEnlc&t=3719-->
+
+  </table>
+
+  <br><br>
+
+  <table>
+    <tr>
+      <th><DT><A HREF="https://news.google.com/topstories?hl=en-US&gl=US&ceid=US:en" target="_blank">Google News</A></th>
+      <th> <A HREF="https://www.bing.com/news" target="_blank">Bing News</A></th>
+      <th><A HREF="https://www.msn.com/en-us" target="_blank">MSN News</A></th>
+      <th><A HREF="https://www.bbc.com/news/world/asia" target="_blank">BBC E</A></th>
+      <th><A HREF="https://www.npr.org/" target="_blank">NPR News</A></th>
+      <th><A HREF="https://news.yahoo.com/" target="_blank">Yahoo News</A></th>
+      <th><A HREF="https://www.dw.com/en/" target="_blank">DW News</A></th>
+      <th><A HREF="https://www.cnbc.com/" target="_blank">CNBC</A></th>
+      <th><A HREF="https://www.aljazeera.com/" target="_blank">Al Jazeera-Site</A></th>     
+      <th><A HREF="https://www.foxnews.com/" target="_blank">Fox site</A></th>
+      <th><A HREF="https://www.cbc.ca/news/world" target="_blank">CBC News</A></th>
+      <th><A HREF="https://www.zdnet.com/" target="_blank">ZdNet</A></th>
+     </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th><A HREF="https://www.bbc.com/tamil" target="_blank">BBC Tamil</A></th>
+      <th><A HREF="https://www.youtube.com/@bbcnewstamil/videos" target="_blank">BBC T-YT</A></th>
+      <th><A HREF="https://www.youtube.com/@DWTamil/videos" target="_blank">DW Tamil</A></th>
+      <th><A HREF="https://news.google.com/home?hl=ta&gl=IN&ceid=IN%3Ata" target="_blank">Google N Tamil</A></th>
+      <th><A HREF="https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en" target="_blank">Google N India</A></th>
+      <th><A HREF="https://www.vikatan.com/" target="_blank">Vikatan</A></th>
+     </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th><A HREF="https://www.youtube.com/user/CNN/videos" target="_blank">&nbsp;&nbsp;CNN -YT</A></th>
+      <th><A HREF="https://www.youtube.com/@CNBCtelevision/videos" target="_blank">CNBC Television -YT</A></th>
+      <th><A HREF="https://www.youtube.com/c/dwnews/videos" target="_blank">DW News -YT</A></th>
+      <th><A HREF="https://www.youtube.com/@msnow/videos" target="_blank">MSNBC -YT</A></th>
+      <th><A HREF="https://www.youtube.com/c/aljazeeraenglish/videos" target="_blank">Al Jazeera-YT</A></th>
+      <th><A HREF="https://www.youtube.com/c/BBCNews/videos" target="_blank">BBC News-YT</A></th>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th><A HREF="https://www.youtube.com/c/FRANCE24English/videos" target="_blank">&nbsp;&nbsp;FRANCE 24</A></th>
+      <th><A HREF="https://www.youtube.com/@FoxNews/videos" target="_blank">Fox News YT</A></th>
+      <th><A HREF="https://www.youtube.com/@NBCNews/videos" target="_blank">NBC News YT</A></th>
+      <th><A HREF="https://www.youtube.com/@CBSNews/videos" target="_blank">CBS News YT</A></th>
+      <th><A HREF="https://www.youtube.com/@cgtnamerica/videos" target="_blank">CGTN YT</A></th>
+      <th><A HREF="https://www.youtube.com/@SkyNewsAustralia/videos" target="_blank">Sky News Aus YT</A></th>
+      <th><A HREF="https://www.youtube.com/@abcnewsaustralia/videos" target="_blank">ABC News Aus YT</A></th>
+
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th><A HREF="https://www.youtube.com/@CBCNews/videos" target="_blank">&nbsp;&nbsp;CBC News YT</A></th>
+      <th><A HREF="https://www.youtube.com/@NHKWORLDJAPAN/videos" target="_blank">NHK JAPAN YT</A></th>
+      <th><A HREF="https://www.youtube.com/@MajorMadhanKumar/videos" target="_blank">MajorMadhanKumar YT</A></th>
+      <th><A HREF="https://www.youtube.com/@PGurus1/videos" target="_blank">PGurusE</A></th>
+      <th><A HREF="https://www.youtube.com/@PGurusTamil/videos" target="_blank">PGurusT</A></th>
+      <th><A HREF="https://www.youtube.com/results?search_query=BeerBiceps" target="_blank">BeerBiceps</A></th>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th><A HREF="https://www.youtube.com/@indiatoday/videos" target="_blank">&nbsp;&nbsp;India Today YT</A></th>
+      <th><A HREF="https://www.youtube.com/@cnnnews18/videos" target="_blank">CNN News18 YT</A></th>
+      <th><A HREF="https://www.youtube.com/@WION/videos" target="_blank">WION News YT</A></th>
+      <th><A HREF="https://www.youtube.com/@RepublicWorld/videos" target="_blank">Republic TV YT</A></th>
+      <th><A HREF="https://www.youtube.com/@Firstpost/videos" target="_blank">FirstPost YT</A></th>
+      <th><A HREF="https://www.youtube.com/@NDTV/videos" target="_blank">NDTV YT</A></th>
+      <th>
+      <th><A HREF="https://www.youtube.com/results?search_query=vantage+palki+sharma" target="_blank"">Palki Sharma</A></th>
+                <th><th><A HREF=" https://www.youtube.com/results?search_query=India+News+Live+English" target="_blank"">India News English Live YT</A></th>
+           </tr>
+            </table>
+          </table>
+
+<br><br>
+
+<img src="Aanjaneya Namaskaram Rama Paadam HP.png" width="800" height="500" alt="Omkarananda">
+
+</body>
+
+</html>
+
+<!-- Comments Start Here
+
+
+Comments End Here -->
+
